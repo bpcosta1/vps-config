@@ -1,0 +1,21 @@
+services:
+  termix:
+    image: ghcr.io/lukegus/termix:latest
+    container_name: termix
+    restart: unless-stopped
+    environment:
+      - PORT=5674
+    volumes:
+      - ./termix-data:/app/data
+    networks:
+      - proxy-network
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.termix.rule=Host(`termix.${DOMAIN}`)"
+      - "traefik.http.routers.termix.entrypoints=websecure"
+      - "traefik.http.routers.termix.tls.certresolver=myresolver"
+      - "traefik.http.services.termix.loadbalancer.server.port=5674"
+
+networks:
+  proxy-network:
+    external: true
