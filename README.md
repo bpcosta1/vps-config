@@ -1,8 +1,8 @@
 # vps-config
 
-Docker Compose configurations for my self-hosted VPS, built around [Traefik](https://traefik.io/) as a reverse proxy and [Tailscale](https://tailscale.com/) as a mesh VPN. Private services are never exposed to the public internet — they route exclusively through Tailscale IPs.
+Docker Compose configurations for my self-hosted VPS, built around [Traefik](https://traefik.io/) as a reverse proxy and [Tailscale](https://tailscale.com/) as a mesh VPN. Private services are never exposed to the public internet, they route exclusively through Tailscale IPs.
 
-📖 If you want to understand the architecture behind this, I wrote a full breakdown on my blog: [link]
+If you want to understand the architecture behind this, I wrote a full breakdown on my [personal website](https://www.bpcosta.com/writings/self-hosting-on-a-vps/)].
 
 ---
 
