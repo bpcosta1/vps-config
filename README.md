@@ -43,7 +43,7 @@ vps-config/
 Clone the repo and create the external Docker network:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/vps-config.git ~/vps-config
+git clone https://github.com/bpcosta1/vps-config.git ~/vps-config
 docker network create proxy-network
 ```
 
